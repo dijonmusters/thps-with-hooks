@@ -1,13 +1,13 @@
-import React from 'react';
-import Skaters from './Skaters';
+import React from 'react'
+import HookSkaters from './HookSkaters'
 
-import './App.scss';
+import './App.scss'
 
 const App = () => (
   <div className="app">
-    <Skaters />
-    <Skaters useCache />
+    <HookSkaters useCache={false} />
+    <HookSkaters useCache={true} />
   </div>
-);
+)
 
-export default App;
+export default App
